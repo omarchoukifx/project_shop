@@ -505,6 +505,12 @@ header .dropdown-menu li:first-child a{
 .list-products li:hover{
     color: var(--main-color);
 }
+
+.products-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px 0;
+}
 .product-item {
     position: relative;
     margin: 20px 0;
@@ -513,6 +519,7 @@ header .dropdown-menu li:first-child a{
     position: absolute;
     top: 0;
     left: 0px;
+    width: 100%;
     transform: scaleX(0);
     opacity: 0;
     transition: 0.3s;
@@ -538,13 +545,11 @@ header .dropdown-menu li:first-child a{
     color: #fff;
     
 }
-.products-items{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 30px 0;
-}
+
 .product-info{
     padding: 10px;
+    text-align: left;
+    margin-left: 30px;
 }
 .product-info h3{
     font-weight: 500;
@@ -584,6 +589,8 @@ header .dropdown-menu li:first-child a{
     margin: 0 auto;
 }
 
+
+    /**media-query**/
 
 @media screen and (max-width:768px){
     .container{
@@ -640,9 +647,9 @@ header .dropdown-menu li:first-child a{
     .products-items{
         grid-template-columns: 1fr;
     }
-    .product-overlay{
+    /* .product-overlay{
         visibility: hidden;
-    }
+    } */
     .last-desc p{
         font-size: 16px;
         line-height: 1.2;
