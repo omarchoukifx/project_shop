@@ -56,7 +56,7 @@ header .navbar li{
     display: inline-block;
 
 }
-header .lis> a ,header .login a ,span{
+header .lis> a ,header .login a , .login span{
     color: #333333;
     font-size: 18px;
     font-weight: 530;
